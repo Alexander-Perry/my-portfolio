@@ -6,7 +6,7 @@ function About() {
     return (
         <div>
             <h1>About Me</h1>
-            <img src={AlexImage} alt="Alex" width='100px' />
+            <img src={AlexImage} alt="Alex" width='100px' style={{ 'borderRadius': '50%' }} />
             <p>
                 My name is Alex and this is my story.
             </p>

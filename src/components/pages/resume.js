@@ -1,11 +1,13 @@
 import React from 'react';
 import ResumeFile from '../../assets/files/resume.pdf';
 
+// Resume render function
 function Resume() {
     return (
         <div>
             <h2>Resume</h2>
-            Download my <a href={ResumeFile} download>resume</a>
+            {/* Download for ResumeFile */}
+            Download my <a href={ResumeFile} download target="_self">resume</a>
             <h3>Front-end Proficiencies</h3>
             <ul>
                 <li>HTML</li>

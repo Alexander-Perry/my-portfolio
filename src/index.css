@@ -9,6 +9,31 @@ body {
   
 }
 
+*{
+  background-color: #252525;
+  color: lightgrey;
+  font-family: Verdana, sans-serif;
+}
+
+a:hover{
+  color: lightgrey;
+  
+}
+a{
+  color: blueviolet;
+}
+
+.nav-item .nav-link, .nav-item .nav-link:hover{
+  color: blueviolet;
+}
+
+.nav .nav-item .nav-link.active{
+  background-color: indigo;
+  color: lightgrey;
+}
+
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
