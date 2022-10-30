@@ -13,9 +13,9 @@ function Portfolio() {
         <div>
             <h2>My Portfolio</h2>
             <div className='container justify-content-center'>
-                <CardGroup>
+                <CardGroup >
 
-                    <Card className="bg-dark text-white m-2 p-2"  >
+                    <Card className="bg-dark text-white m-2 p-2" style={{minWidth:'300px'}}  >
                         <Card.Img variant='top' src={UPPImage} />
                         <Card.Body>
                             <Card.Title >Ultimate Pocket Pal</Card.Title>
@@ -24,7 +24,7 @@ function Portfolio() {
                         </Card.Body>
                     </Card>
 
-                    <Card className="bg-dark text-white m-2 p-2" >
+                    <Card className="bg-dark text-white m-2 p-2" style={{minWidth:'300px'}}>
                         <Card.Img variant='top' src={CSSSnippetImg} />
                         <Card.Body>
                             <Card.Title >CSS Snippet</Card.Title>
@@ -33,7 +33,7 @@ function Portfolio() {
                         </Card.Body>
                     </Card>
 
-                    <Card className="bg-dark text-white m-2 p-2" >
+                    <Card className="bg-dark text-white m-2 p-2" style={{minWidth:'300px'}} >
                         <Card.Img variant='top' src={UmbrellaImg} />
                         <Card.Body>
                             <Card.Title >Umbrella</Card.Title>
@@ -43,7 +43,7 @@ function Portfolio() {
                     </Card>
                 </CardGroup>
                 <CardGroup>
-                    <Card className="bg-dark text-white m-2 p-2" >
+                    <Card className="bg-dark text-white m-2 p-2" style={{minWidth:'300px'}} >
                         <Card.Img variant='top' src={LiftImg} />
                         <Card.Body>
                             <Card.Title >Lift</Card.Title>
@@ -52,7 +52,7 @@ function Portfolio() {
                         </Card.Body>
                     </Card>
 
-                    <Card className="bg-dark text-white m-2 p-2" >
+                    <Card className="bg-dark text-white m-2 p-2" style={{minWidth:'300px'}}>
                         <Card.Img variant='top' src={JATEImg} />
                         <Card.Body>
                             <Card.Title >PWA Text Editor</Card.Title>
@@ -61,7 +61,7 @@ function Portfolio() {
                         </Card.Body>
                     </Card>
 
-                    <Card className="bg-dark text-white m-2 p-2" >
+                    <Card className="bg-dark text-white m-2 p-2" style={{minWidth:'300px'}}>
                         <Card.Img variant='top' src={TeamProfileImg} />
                         <Card.Body>
                             <Card.Title >Team Profile Generator</Card.Title>
