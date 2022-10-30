@@ -5,7 +5,7 @@
 * Written in React
 
 ## Deployment:
-* 
+* http://Alexander-Perry.github.io/my-portfolio
 
 ## Table of Contents: 
 * [Description](#description)
@@ -32,7 +32,7 @@
 
 ## Media
 ### Screenshots
-
+![portfolio_react](https://user-images.githubusercontent.com/102524579/198886668-cad106c8-2720-4b87-b5c6-6765d92df4ce.png)
 
 
 ## Questions
