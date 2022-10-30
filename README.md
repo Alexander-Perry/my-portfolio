@@ -24,8 +24,8 @@
 * npm run start
 
 ## Contribution Guidelines
-*Clearly document any changes made
-*Credit original sources
+* Clearly document any changes made
+* Credit original sources
 
 ## Testing
 *Ensure pages render without reload 
