@@ -13,60 +13,65 @@ function Portfolio() {
         <div>
             <h2>My Portfolio</h2>
             <div className='container justify-content-center'>
-                <CardGroup >
-
-                    <Card className="bg-dark text-white m-2 p-2" style={{minWidth:'300px'}}  >
+                <CardGroup>
+                    <Card className="bg-dark text-white border border-light m-2 p-2" style={{ minWidth: '300px' }}  >
                         <Card.Img variant='top' src={UPPImage} />
                         <Card.Body>
-                            <Card.Title >Ultimate Pocket Pal</Card.Title>
+                            <Card.Title className='text-center'>Ultimate Pocket Pal</Card.Title>
                             <Card.Text>React app built using React/MUI/MongoDB/JWT</Card.Text>
-                            <Card.Link href='https://pacific-forest-65301.herokuapp.com/' >Check it out</Card.Link>
+                            <Card.Link href='https://pacific-forest-65301.herokuapp.com/' >Deployed App</Card.Link>
+                            <Card.Link href='https://github.com/Alexander-Perry/ultimate-pocket-pal' >Github Repository</Card.Link>
+
                         </Card.Body>
                     </Card>
 
-                    <Card className="bg-dark text-white m-2 p-2" style={{minWidth:'300px'}}>
+                    <Card className="bg-dark text-white border border-light m-2 p-2" style={{ minWidth: '300px' }}  >
                         <Card.Img variant='top' src={CSSSnippetImg} />
                         <Card.Body>
-                            <Card.Title >CSS Snippet</Card.Title>
+                            <Card.Title className='text-center' >CSS Snippet</Card.Title>
                             <Card.Text>App built in HTML/CSS showcasing Flexbox</Card.Text>
-                            <Card.Link href='https://alexander-perry.github.io/CSS-Cheatsheet/' >Check it out</Card.Link>
+                            <Card.Link href='https://alexander-perry.github.io/CSS-Cheatsheet/' >Deployed App</Card.Link>
+                            <Card.Link href='https://github.com/Alexander-Perry/CSS-Cheatsheet'>Github Repository</Card.Link>
                         </Card.Body>
                     </Card>
 
-                    <Card className="bg-dark text-white m-2 p-2" style={{minWidth:'300px'}} >
+                    <Card className="bg-dark text-white border border-light m-2 p-2" style={{ minWidth: '300px' }}  >
                         <Card.Img variant='top' src={UmbrellaImg} />
                         <Card.Body>
-                            <Card.Title >Umbrella</Card.Title>
+                            <Card.Title className='text-center' >Umbrella</Card.Title>
                             <Card.Text>App built using JavaScript/Bootstrap/Google Maps/Weather API</Card.Text>
-                            <Card.Link href='https://alexander-perry.github.io/Umbrella/' >Check it out</Card.Link>
+                            <Card.Link href='https://alexander-perry.github.io/Umbrella/' >Deployed App</Card.Link>
+                            <Card.Link href='https://github.com/Alexander-Perry/Umbrella'>Github Repository</Card.Link>
                         </Card.Body>
                     </Card>
                 </CardGroup>
                 <CardGroup>
-                    <Card className="bg-dark text-white m-2 p-2" style={{minWidth:'300px'}} >
+                    <Card className="bg-dark text-white border border-light m-2 p-2" style={{ minWidth: '300px' }}  >
                         <Card.Img variant='top' src={LiftImg} />
                         <Card.Body>
-                            <Card.Title >Lift</Card.Title>
+                            <Card.Title className='text-center'>Lift</Card.Title>
                             <Card.Text>App build using JavaScript/Bootstrap/Node/Express/Sequelize/MySQL/Handlebars</Card.Text>
-                            <Card.Link href='https://salty-ridge-96244.herokuapp.com/' >Check it out</Card.Link>
+                            <Card.Link href='https://salty-ridge-96244.herokuapp.com/' >Deployed App</Card.Link>
+                            <Card.Link href='https://github.com/Alexander-Perry/do-you-lift'>Github Repository</Card.Link>
                         </Card.Body>
                     </Card>
 
-                    <Card className="bg-dark text-white m-2 p-2" style={{minWidth:'300px'}}>
+                    <Card className="bg-dark text-white border border-light m-2 p-2" style={{ minWidth: '300px' }}  >
                         <Card.Img variant='top' src={JATEImg} />
                         <Card.Body>
-                            <Card.Title >PWA Text Editor</Card.Title>
+                            <Card.Title className='text-center'>PWA Text Editor</Card.Title>
                             <Card.Text>Console Text Editor in Node and can be installed as a PWA</Card.Text>
-                            <Card.Link href='https://guarded-tor-99822.herokuapp.com/' >Check it out</Card.Link>
+                            <Card.Link href='https://guarded-tor-99822.herokuapp.com/' >Deployed App</Card.Link>
+                            <Card.Link href='https://github.com/Alexander-Perry/PWA-Text-Editor'>Github Repository</Card.Link>
                         </Card.Body>
                     </Card>
 
-                    <Card className="bg-dark text-white m-2 p-2" style={{minWidth:'300px'}}>
+                    <Card className="bg-dark text-white border border-light m-2 p-2 " style={{ minWidth: '300px' }}  >
                         <Card.Img variant='top' src={TeamProfileImg} />
                         <Card.Body>
-                            <Card.Title >Team Profile Generator</Card.Title>
+                            <Card.Title className='text-center'>Team Profile Generator</Card.Title>
                             <Card.Text>Console Application that generates a team profile HTML file</Card.Text>
-                            <Card.Link href='https://github.com/Alexander-Perry/Team-Profile-Generator' >Check it out</Card.Link>
+                            <Card.Link href='https://github.com/Alexander-Perry/Team-Profile-Generator'>Github Repository</Card.Link>
                         </Card.Body>
                     </Card>
                 </CardGroup>

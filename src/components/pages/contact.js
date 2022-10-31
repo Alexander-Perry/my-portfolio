@@ -31,6 +31,10 @@ function Contact() {
         setButtonDisabled(true);
     };
 
+    // test that entered email is valid
+    const validateEmail = (email) => {
+        return /\S+@\S+\.\S+/.test(email);
+    };
 
     // Update on changes to formState
     useEffect(() => {
@@ -41,13 +45,16 @@ function Contact() {
         }
         if (!name) {
             return (setButtonDisabled(true), setResponseMessage('Name required'))
-        }
+        };
         if (!email) {
             return (setButtonDisabled(true), setResponseMessage('Email required'))
-        }
+        };
+        if (email && !validateEmail(email)) {
+            return (setButtonDisabled(true), setResponseMessage('Invalid Email'))
+        };
         if (!message) {
             return (setButtonDisabled(true), setResponseMessage('Message required'))
-        }
+        };
         setButtonDisabled(false)
         setResponseMessage()
     }, [formState]);
