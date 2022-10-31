@@ -10,13 +10,19 @@ function Contact() {
     const [responseMessage, setResponseMessage] = useState();
     // State to enable the submit button only when valid data entered
     const [buttonDisabled, setButtonDisabled] = useState(true);
+    const [inputData, setInputData] = useState({ name: '', email: '', message: '' });
 
     // Handle input changes to the form
     // update formState with relevant key/value pairs
     const handleInputChange = (event) => {
         const { name, value } = event.target;
-        setFormState({ ...formState, [name]: value });
+        setInputData({ ...inputData, [name]: value });
     };
+
+    const handleFocusChange = (event) => {
+        const { name, value } = event.target;
+        setFormState({ ...formState, [name]: value });
+    }
 
     // Handle for the submit button
     const handleFormSubmit = async (e) => {
@@ -27,6 +33,7 @@ function Contact() {
         // The button is disabled, however this adds a 2nd level of checks.
         if (!name || !email || !message) { return (setResponseMessage('Data Missing')) }
         return (
+            setInputData({ name: '', email: '', message: '' }),
             setFormState({ name: '', email: '', message: '' }),
             setResponseMessage("Message Sent"),
             setButtonDisabled(true)
@@ -70,15 +77,15 @@ function Contact() {
             <Form style={{ maxWidth: 600 }} >
                 <Form.Group className='mb-3' controlId='formName'>
                     <Form.Label>Name</Form.Label>
-                    <Form.Control type='input' name='name' onChange={handleInputChange} value={formState.name} />
+                    <Form.Control type='input' name='name' onBlur={handleFocusChange} onChange={handleInputChange} value={inputData.name} />
                 </Form.Group>
                 <Form.Group className='mb-3' controlId='formEmail'>
                     <Form.Label>Email</Form.Label>
-                    <Form.Control type='email' name='email'  onChange={handleInputChange} value={formState.email} />
+                    <Form.Control type='email' name='email'  onBlur={handleFocusChange} onChange={handleInputChange} value={inputData.email} />
                 </Form.Group>
                 <Form.Group className='mb-3' controlId='formMessage'>
                     <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows={3} name='message' onChange={handleInputChange} value={formState.message} />
+                    <Form.Control as="textarea" rows={3} name='message' onBlur={handleFocusChange} onChange={handleInputChange} value={inputData.message} />
                 </Form.Group>
                 {/* element for response message */}
                 <h5>{responseMessage }</h5>
