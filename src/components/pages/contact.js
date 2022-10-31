@@ -26,9 +26,11 @@ function Contact() {
         // return if missing data, otherwise setResponse message to 'Message Sent and clear the form. 
         // The button is disabled, however this adds a 2nd level of checks.
         if (!name || !email || !message) { return (setResponseMessage('Data Missing')) }
-        setResponseMessage("Message Sent")
-        setFormState({ name: '', email: '', message: '' });
-        setButtonDisabled(true);
+        return (
+            setFormState({ name: '', email: '', message: '' }),
+            setResponseMessage("Message Sent"),
+            setButtonDisabled(true)
+        );
     };
 
     // test that entered email is valid
@@ -41,7 +43,8 @@ function Contact() {
         // validate the input fields and set ResponseMessage with the relevant error
         const { name, email, message } = formState;
         if (!name && !email && !message) {
-            return
+            if (responseMessage === 'Message Sent') { return };
+            return (setButtonDisabled(true), setResponseMessage(''));
         }
         if (!name) {
             return (setButtonDisabled(true), setResponseMessage('Name required'))
